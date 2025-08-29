@@ -17,10 +17,29 @@ interface HomeProps {
 
 function Home({ titulo, texto }: HomeProps) {
     const [habitos] = useState<Habito[]>([
-        { id: 1, titulo: "Beber água", texto: "Diária: 8 copos", img: "/assets/agua.jpg", meta: 8 },
-        { id: 2, titulo: "Caminhada", texto: "30 min", img: "/assets/caminhada.jpg", meta: 1 },
-        { id: 3, titulo: "Estudar", texto: "1h de foco", img: "/assets/estudar.jpg", meta: 1 },
+        {
+            id: 1,
+            titulo: "Beber água",
+            texto: "Diária: 8 copos",
+            img: `${import.meta.env.BASE_URL}assets/agua.jpg`,
+            meta: 8,
+        },
+        {
+            id: 2,
+            titulo: "Caminhada",
+            texto: "30 min",
+            img: `${import.meta.env.BASE_URL}assets/caminhada.jpg`,
+            meta: 1,
+        },
+        {
+            id: 3,
+            titulo: "Estudar",
+            texto: "1h de foco",
+            img: `${import.meta.env.BASE_URL}assets/estudar.jpg`,
+            meta: 1,
+        },
     ]);
+
 
 
     const [progresso, setProgresso] = useState<Record<number, number>>({});

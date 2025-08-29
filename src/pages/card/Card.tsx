@@ -29,7 +29,7 @@ function Card({ titulo, texto, img}: CardProps) {
             )}
 
             <p>{texto}</p>
-            <img src={img} width="500px" alt={titulo} />
+            <img src={`${import.meta.env.BASE_URL}${img}`} width="500px" alt={titulo} />
         </div>
     );
 }
