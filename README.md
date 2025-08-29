@@ -1,30 +1,54 @@
-# React + TypeScript + Vite
+# 🟢 Vida Saudável — Controle de Hábitos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+App simples para acompanhar e concluir hábitos diários com interface em preto, ciano e laranja.
+Você escolhe um hábito, marca o progresso por “bolinhas” ✅ e acompanha seu desempenho.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+⚛️ React + Vite (TypeScript)
 
-## Expanding the ESLint configuration
+🎨 CSS puro (tema ciano/preto/laranja)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📦 Como rodar
+    1) Instalar dependências
+       npm install
 
-- Configure the top-level `parserOptions` property like this:
+    2) Rodar em desenvolvimento
+       npm run dev
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+    3) Build de produção
+       npm run build
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+    4) Servir o build (opcional)
+       npm run preview
+
+## 🧩 Componentes
+🔑 Login
+
+Alterna entre tela de login e Home (isLogged).
+
+Botão “Entrar” apenas simula login.
+
+🏠 Home
+
+Lista de hábitos (id, titulo, texto, img, meta).
+
+Mostra status do progresso.
+
+Abre Tarefa ao selecionar um hábito.
+
+📝 Card
+
+Exibe título, texto motivacional 🌟 (condicional por hábito), meta/status e imagem.
+
+🎯 Tarefa
+
+Mostra N bolinhas clicáveis.
+
+Permite marcar/desmarcar progresso.
+
+Exibe count/meta concluído(s) e botão “Voltar”.
+
+## 📜 Licença
+
+📖 Livre para uso educativo e pessoal. Recomendo MIT.
